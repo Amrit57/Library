@@ -66,7 +66,7 @@ button {
   letter-spacing: 0.1rem;
   cursor: pointer;
 }
-.read {
+.status {
   width: auto;
 }
 .delete {
@@ -87,19 +87,19 @@ table {
   border: 3px solid var(--bg-form);
   color: white;
   width: 100%;
-  padding: 10px;
+  padding: px;
   border-collapse: collapse;
   letter-spacing: 0.1rem;
 }
-thead {
+th {
   letter-spacing: 0.2rem;
   word-spacing: 0.5rem;
   text-transform: uppercase;
+  padding: 10px;
 }
 th,
 td {
   border: 2px solid var(--bg-form);
   width: auto;
   text-align: center;
-  padding: 10px;
 }
