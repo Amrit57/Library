@@ -1,14 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
-    This 
+    <div class="container">
+        <div class="header">
+            <h1>BOOK LIBRARY</h1>
+        </div>
+        <div class="form">
+            <h1>Add Books To Your Library</h1>
+            <form action="post">
+                <label for="book">Book's Name</label>
+                <input type="text" id="book-name" name="book" required>
+                <br>
+                <label for="author">Author's Name</label>
+                <input type="text" id="author-name" name="author" required>
+                <br>
+                <label for="pages">No. Of Pages</label>
+                <input type="number" id="number" name="pages">
+                <br>
+                <div class="radio">
+                    <input type="radio" id="read" name="read">
+                    <label for="read">Read</label>
+                    <input type="radio" id="unread" name="unread">
+                    <label for="unread">Unread</label>
+                </div>
+
+            </form>
+        </div>
+        <div class="book-display">
+            <table>
+                <thead>
+
+                    <tr>
+                        <th>Book's Name</th>
+                        <th>Author's Name</th>
+                        <th>No. Of Pages</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>Rich DAD Poor DAD</td>
+                        <td>Robert Kiyosaki</td>
+                        <td>200</td>
+                        <td>Read</td>
+                    </tr>
+                    <tr>
+                        <td>Books Title</td>
+                        <td>Book Author</td>
+                        <td>100</td>
+                        <td>Unread</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
+
 </html>
