@@ -33,15 +33,19 @@
                 <input type="number" id="number" name="pages">
                 <br>
                 <div class="radio">
-                    <input type="radio" id="read" name="read">
-                    <label for="read">Read</label>
-                    <input type="radio" id="unread" name="unread">
-                    <label for="unread">Unread</label>
+                    <div class="read">
+                        <input type="radio" id="read" name="read">
+                        <label for="read">Read</label>
+                    </div>
+                    <div class="unread">
+                        <input type="radio" id="unread" name="unread">
+                        <label for="unread">Unread</label>
+                    </div>
                 </div>
-
+                <button type="button">Submit</button>
             </form>
         </div>
-        <div class="book-display">
+        <div class="book-table">
             <table>
                 <thead>
 
@@ -50,6 +54,7 @@
                         <th>Author's Name</th>
                         <th>No. Of Pages</th>
                         <th>Status</th>
+                        <th>Remove</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -58,13 +63,15 @@
                         <td>Rich DAD Poor DAD</td>
                         <td>Robert Kiyosaki</td>
                         <td>200</td>
-                        <td>Read</td>
+                        <td><button class="read">Read</button></td>
+                        <td><button class="delete" type="button">X</button></td>
                     </tr>
                     <tr>
                         <td>Books Title</td>
                         <td>Book Author</td>
                         <td>100</td>
-                        <td>Unread</td>
+                        <td><button class="read">Unread</button></td>
+                        <td><button class="delete" type="button">X</button></td>
                     </tr>
                 </tbody>
             </table>
