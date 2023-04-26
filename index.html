@@ -23,8 +23,8 @@
         <div class="form">
             <h1>Add Books To Your Library</h1>
             <form action="post">
-                <label for="book">Book's Name</label>
-                <input type="text" id="book-name" name="book" required>
+                <label for="book">Book's Title</label>
+                <input type="text" id="book-title" name="book" required>
                 <br>
                 <label for="author">Author's Name</label>
                 <input type="text" id="author-name" name="author" required>
@@ -33,16 +33,16 @@
                 <input type="number" id="number" name="pages">
                 <br>
                 <div class="radio">
-                    <div class="read">
-                        <input type="radio" id="read" name="read">
+                    <div class="readbtn">
+                        <input type="radio" id="read" name="read" >
                         <label for="read">Read</label>
                     </div>
-                    <div class="unread">
-                        <input type="radio" id="unread" name="unread">
+                    <div class="readbtn">
+                        <input type="radio" id="unread" name="read">
                         <label for="unread">Unread</label>
                     </div>
                 </div>
-                <button type="button">Submit</button>
+                <button type="button" id="add-book">Add Book</button>
             </form>
         </div>
         <div class="book-table">
@@ -50,7 +50,7 @@
                 <thead>
 
                     <tr>
-                        <th>Book's Name</th>
+                        <th>Book's Title</th>
                         <th>Author's Name</th>
                         <th>No. Of Pages</th>
                         <th>Status</th>
@@ -63,14 +63,14 @@
                         <td>Rich DAD Poor DAD</td>
                         <td>Robert Kiyosaki</td>
                         <td>200</td>
-                        <td><button class="read">Read</button></td>
+                        <td><button class="status">Read</button></td>
                         <td><button class="delete" type="button">X</button></td>
                     </tr>
                     <tr>
                         <td>Books Title</td>
                         <td>Book Author</td>
                         <td>100</td>
-                        <td><button class="read">Unread</button></td>
+                        <td><button class="status">Unread</button></td>
                         <td><button class="delete" type="button">X</button></td>
                     </tr>
                 </tbody>
