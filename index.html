@@ -34,11 +34,11 @@
                 <br>
                 <div class="radio">
                     <div class="readbtn">
-                        <input type="radio" id="read" name="read" >
+                        <input type="radio" id="read" name="read" value="Read">
                         <label for="read">Read</label>
                     </div>
                     <div class="readbtn">
-                        <input type="radio" id="unread" name="read">
+                        <input type="radio" id="unread" name="read" value="Unread">
                         <label for="unread">Unread</label>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
             <table>
                 <thead>
 
-                    <tr>
+                    <tr id="thead-row">
                         <th>Book's Title</th>
                         <th>Author's Name</th>
                         <th>No. Of Pages</th>
@@ -57,7 +57,7 @@
                         <th>Remove</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="table-body">
 
                     <tr>
                         <td>Rich DAD Poor DAD</td>
