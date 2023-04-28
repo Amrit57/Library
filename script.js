@@ -14,8 +14,22 @@ let statusTd;
 let deleteTd;
 let statusBtn;
 let deleteBtn;
-
+let statusText;
 addBook.addEventListener('click', createNewTable)
+
+statusText = document.querySelectorAll('.status')
+statusText.forEach((e) => {
+    e.addEventListener('click', function changeStatus(e) {
+        if (e.target.textContent == read.value) {
+            e.target.textContent == unread.value;
+        } else if (e.target.textContent == unread.value) {
+            e.target.textContent == read.value;
+        }
+        console.log(e.target)
+
+    }
+    )
+})
 
 function createNewTable() {
 
@@ -46,17 +60,19 @@ function createNewTable() {
     resetForm()
 }
 
+
 function checkRadioValue() {
     if (read.checked === true) {
         statusBtn.classList.add('green-bg')
+        statusBtn.classList.add('status');
         return statusBtn.textContent += read.value;
     } else {
         statusBtn.classList.add('status');
         return statusBtn.textContent += unread.value;
     }
-
-
 }
+
+
 
 function resetForm() {
     bookTitle.value = '';
