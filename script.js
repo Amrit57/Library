@@ -98,7 +98,7 @@ function changeStatus(item) {
         return text.textContent = 'Unread';
     }
 }
- //adding event and function to delete rows in newly created books
+//adding event and function to delete rows in newly created books
 function deleteRow() {
     deleteBtn = document.querySelectorAll('.remove')
     deleteBtn.forEach((item) => {
