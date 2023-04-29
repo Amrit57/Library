@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <title>Library</title>
 </head>
 
 <body>
@@ -24,23 +24,19 @@
             <h1>Add Books To Your Library</h1>
             <form action="post">
                 <label for="book">Book's Title</label>
-                <input type="text" id="book-title" name="book" required>
+                <input required type="text" id="book-title" name="book" required>
                 <br>
                 <label for="author">Author's Name</label>
-                <input type="text" id="author-name" name="author" required>
+                <input required type="text" id="author-name" name="author" required>
                 <br>
                 <label for="pages">No. Of Pages</label>
                 <input type="number" id="number" name="pages">
                 <br>
-                <div class="radio">
-                    <div class="readbtn">
-                        <input type="radio" id="read" name="read" value="Read">
-                        <label for="read">Read</label>
-                    </div>
-                    <div class="readbtn">
-                        <input type="radio" id="unread" name="read" value="Unread">
-                        <label for="unread">Unread</label>
-                    </div>
+                <div class="status">
+                    <select name="status" id="select">
+                        <option value="Read">Read</option>
+                        <option value="Uread">Unread</option>
+                    </select>
                 </div>
                 <button type="button" id="add-book">Add Book</button>
             </form>
@@ -60,18 +56,18 @@
                 <tbody id="table-body">
 
                     <tr>
-                        <td>Rich DAD Poor DAD</td>
-                        <td>Robert Kiyosaki</td>
-                        <td>200</td>
-                        <td><button class="status green-bg">Read</button></td>
-                        <td><button class="delete" type="button">X</button></td>
+                        <td class="tdata" >Rich DAD Poor DAD</td>
+                        <td class="tdata" >Robert Kiyosaki</td>
+                        <td class="tdata" >200</td>
+                        <td class="tdata" ><button class="status green-bg">Read</button></td>
+                        <td class="tdata" ><button class="delete" type="button">X</button></td>
                     </tr>
                     <tr>
-                        <td>Books Title</td>
-                        <td>Book Author</td>
-                        <td>100</td>
-                        <td><button class="status">Unread</button></td>
-                        <td><button class="delete" type="button">X</button></td>
+                        <td class="tdata" >Books Title</td>
+                        <td class="tdata" >Book Author</td>
+                        <td class="tdata" >100</td>
+                        <td class="tdata" ><button class="status">Unread</button></td>
+                        <td class="tdata" ><button class="delete" type="button">X</button></td>
                     </tr>
                 </tbody>
             </table>

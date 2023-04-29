@@ -42,17 +42,22 @@ input {
   padding: 10px;
   font-size: 1rem;
 }
-.radio {
-  display: flex;
-  gap: 50px;
-  align-items: center;
-}
 input[type="radio"] {
   cursor: pointer;
   height: 20px;
   width: 20px;
 }
-
+#select {
+  padding: 10px;
+  text-align: center;
+  background: var(--bg-table);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 150px;
+  cursor: pointer;
+}
 button {
   width: 200px;
   padding: 15px 10px;
@@ -69,9 +74,9 @@ button {
 .status {
   width: auto;
 }
-.green-bg{
-    background: green;
-    width: auto;
+.green-bg {
+  background: green;
+  width: auto;
 }
 .delete {
   width: auto;
@@ -95,14 +100,15 @@ table {
   border-collapse: collapse;
   letter-spacing: 0.1rem;
 }
-th {
+thead {
   letter-spacing: 0.2rem;
   word-spacing: 0.5rem;
   text-transform: uppercase;
   padding: 10px;
 }
 th,
-td {
+.tdata {
+  padding: 10px;
   border: 2px solid var(--bg-form);
   width: auto;
   text-align: center;
