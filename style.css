@@ -74,10 +74,6 @@ button {
 .status {
   width: auto;
 }
-.green-bg {
-  background: green;
-  width: auto;
-}
 .delete {
   width: auto;
   color: red;

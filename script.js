@@ -58,22 +58,15 @@ function addToLibrary() {
 
     newBookStatus.classList.add('tdata')
     newStatusBTn.classList.add('status')
-    if (newStatusBTn.textContent === 'Read') {
-        newStatusBTn.classList.add('green-bg')
-    } else {
-        return
-    }
     newDeleteBtn.classList.add('delete')
     newBtnTd.classList.add('tdata')
     newStatusBTn.addEventListener('click', function changeStatus(item) {
         let text = item.target;
         if (text.textContent === 'Unread') {
-            text.classList.add('green-bg')
             text.classList.add('status')
             text.textContent = 'Read';
         } else if (text.textContent === 'Read') {
             text.textContent = 'Unread';
-            text.classList.remove('green-bg')
         }
         console.log(item.target.textContent)
     })
