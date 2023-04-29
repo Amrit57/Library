@@ -79,6 +79,11 @@ button {
   color: red;
   padding: 10px;
 }
+.remove {
+  width: auto;
+  color: red;
+  padding: 10px;
+}
 .book-table {
   grid-column: 2/3;
   grid-row: 2/3;
